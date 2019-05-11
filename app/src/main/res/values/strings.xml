@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">thread_safe</string>
+    <string name="start_exp">Start experiment</string>
+    <string name="select_problem">Select type of a problem</string>
+    <string name="problem_deadlock">Deadlock</string>
+    <string name="problem_race">Race Condition</string>
+    <string name="problem_priority">Priority Inversion</string>
+    <string name="log">Console log here</string>
+    <string name="kitchen_log">Kitchen log</string>
+    <string name="kitchen_add">Add order</string>
+</resources>

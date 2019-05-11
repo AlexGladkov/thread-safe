@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/select_problem"
+        android:layout_margin="16dp" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rbDeadlock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/problem_deadlock" />
+
+        <RadioButton
+            android:id="@+id/rbRace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/problem_race"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp" />
+
+        <RadioButton
+            android:id="@+id/rbPriority"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/problem_priority" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="@string/start_exp"
+        android:background="@color/colorPrimary"
+        android:textColor="#FFFFFF" />
+
+    <EditText
+        android:id="@+id/textConsole"
+        android:layout_width="match_parent"
+        android:textSize="12sp"
+        android:textColor="#000000"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="top|start"
+        android:scrollbars="vertical"
+        android:scrollbarStyle="outsideOverlay"
+        android:padding="16dp"
+        android:hint="@string/log"
+        android:enabled="false"
+        android:editable="false"
+        android:inputType="textMultiLine" />
+
+</LinearLayout>
